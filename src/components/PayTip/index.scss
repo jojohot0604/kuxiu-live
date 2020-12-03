@@ -1,0 +1,75 @@
+.pay-tip {
+    min-width: 260px;
+
+    .title {
+        padding: 0 0 0 22px;
+        height: 48px;
+        line-height: 48px;
+        font-size: 14px;
+        color: #4a4a4a;
+        overflow: hidden;
+        background-color: #f3f3f3;
+        border-radius: 6px 6px 0px 0px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: block;
+        text-align: left;
+    }
+
+    .content {
+        position: relative;
+        padding: 20px 22px;
+        line-height: 24px;
+        word-break: break-all;
+        overflow: hidden;
+        font-size: 14px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        color: #9b9b9b;
+        text-align: left;
+    }
+
+    .right-btn {
+        position: absolute;
+        right: 14px;
+        top: 14px;
+        cursor: pointer;
+
+        &.close {
+            width: 18px;
+            height: 18px;
+            transition: transform 2s;
+            background: url('//img.17kuxiu.com/web/live/kuxiu/img/close.png') no-repeat center;
+
+            &:hover {
+                transform: rotate(-360deg)
+            }
+        }
+    }
+
+    .bottom-btn {
+        text-align: center;
+        padding: 0 10px 20px;
+        pointer-events: auto;
+
+        .btn {
+            height: 36px;
+            line-height: 36px;
+            margin: 0 6px;
+            background-color: #d8d8d8;
+            color: #fff;
+            border-radius: 18px;
+            font-weight: 400;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            vertical-align: top;
+            font-size: 14px;
+            width: 110px;
+
+            &.success {
+                background-color: #4c9ef0;
+            }
+        }
+    }
+}

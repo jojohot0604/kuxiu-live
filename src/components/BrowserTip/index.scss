@@ -1,0 +1,111 @@
+.browser-tip {
+    padding: 40px 20px 40px 20px;
+    height: 200px;
+    display: block;
+
+    .right-btn {
+        position: absolute;
+        right: 14px;
+        top: 14px;
+        cursor: pointer;
+
+        &.close {
+            width: 18px;
+            height: 18px;
+            transition: transform 2s;
+            background: url('//img.17kuxiu.com/web/live/kuxiu/img/close.png') no-repeat center;
+
+            &:hover {
+                transform: rotate(-360deg)
+            }
+        }
+    }
+
+    .wrapper-left {
+        position: relative;
+        padding-right: 14px;
+        border-right: 1px solid #f1f1f1;
+        display: block;
+        width: 200px;
+        float: left;
+    }
+
+    .wrapper-right {
+        position: relative;
+        padding-left: 14px;
+        display: block;
+        float: left;
+    }
+
+    .text-title {
+        position: relative;
+        font-size: 14px;
+        font-weight: 600;
+        color: #c352fe;
+        line-height: 16px;
+        text-align: center;
+    }
+
+    .wrapper-qrcode {
+        margin-top: 30px;
+        width: 112px;
+        height: auto;
+        border: 1px solid #f1f1f1;
+        border-radius: 10px;
+        padding: 8px;
+
+        .qrcode {
+            width: 100%;
+            height: auto;
+            display: inline-block;
+        }
+    }
+
+    .text-title-browser {
+        position: relative;
+        font-size: 14px;
+        font-weight: 600;
+        color: #333;
+        line-height: 14px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .text-content {
+        position: relative;
+        font-size: 12px;
+        font-weight: 400;
+        color: #666;
+        line-height: 14px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .card-browser {
+        margin-top: 10px;
+        width: auto;
+        border: 1px solid #f1f1f1;
+        border-radius: 10px;
+        padding: 14px;
+        &.mt20 {
+            margin-top: 20px
+        }
+        .link-browser {
+            position: relative;
+            display: block;
+            // width: 40px;
+            height: auto;
+            img {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .content-browser {
+            height: 40px;
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,325 @@
+.pay-process {
+    width: 1000px;
+    margin: 0px auto 0 auto;
+    padding-top: 98px;
+    background: #fff;
+    .cf:after {
+        content: "";
+        display: table;
+        clear: both
+    }
+
+    .content-title {
+        width: 100%;
+        background: #ececec;
+        height: 60px;
+        line-height: 60px;
+        font-size: 14px;
+        color: #4a4a4a;
+
+        .account-box {
+            float: left;
+            padding: 10px 0 0 20px;
+
+            .account-box-head {
+                width: 40px;
+                height: 40px;
+                border: 2px solid #ffffff;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border-radius: 50%;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    display: inline-block;
+                    position: absolute;
+                    border-radius: 50%;
+                }
+            }
+
+            .account-box-info {
+                line-height: 40px;
+                font-size: 14px;
+                color: #4a4a4a;
+                margin-left: 20px;
+
+                .account-box-name {
+                    max-width: 180px;
+                }
+            }
+        }
+
+        .pay-amount {
+            font-size: 14px;
+            color: #4a4a4a;
+            float: left;
+            margin-left: 20px;
+
+            span {
+                font-size: 14px;
+                color: #ff6900;
+            }
+        }
+
+        .commodity-name,
+        .transaction-type {
+            font-size: 14px;
+            color: #4a4a4a;
+            float: left;
+            margin-left: 20px;
+        }
+
+        .change-order {
+            margin: 14px 20px 0 0;
+            width: 88px;
+            line-height: 32px;
+            float: right;
+            background: #F9743A;
+            box-shadow: 0px 2px 4px 0px rgba(249, 116, 58, 0.50);
+            -webkit-border-radius: 100px;
+            -moz-border-radius: 100px;
+            border-radius: 100px;
+            font-size: 14px;
+            color: #FFFFFF;
+            text-align: center;
+            cursor: pointer;
+        }
+    }
+
+    .people-info {
+        width: 100%;
+        height: 46px;
+        font-size: 16px;
+        line-height: 46px;
+        margin-top: 30px;
+
+        .pay-list {
+            list-style: none;
+            background: #ececec;
+
+            li {
+                width: 200px;
+                line-height: 46px;
+                height: 46px;
+                text-align: center;
+                float: left;
+                cursor: pointer;
+                font-size: 20px;
+                color: #4a4a4a;
+                overflow: hidden;
+                transition: all .2s ease;
+
+                img {
+                    margin-left: 6px;
+                    margin-top: -1px;
+                    width: 54px;
+                    height: auto;
+                    display: inline-block;
+                }
+
+                .pay-list-name {
+                    width: 200px;
+                    font-size: 20px;
+                    color: #f9743a;
+                    line-height: 42px;
+                    background-color: #fff;
+                    border-top: 4px solid #f9743a;
+                    height: 42px;
+                    display: inline-block;
+                    text-indent: 0;
+                }
+            }
+        }
+    }
+
+    .change-pay-content {
+        width: 100%;
+        height: auto !important;
+        background-color: #fff;
+
+        .pay-detail {
+            width: 450px;
+            height: auto !important;
+            margin: 80px auto;
+            text-align: center;
+
+            .pay-title {
+                width: 188px;
+                text-align: center;
+                display: inline-block;
+                vertical-align: bottom;
+                border: 1px solid rgba(220, 220, 220, 1);
+
+                .qrcode-content {
+                    width: auto;
+                    padding-top: 10px;
+                    border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    display: block;
+                    position: relative;
+
+                    .logo {
+                        width: 38px;
+                        height: auto;
+                        display: inline-block;
+                        position: absolute;
+                        bottom: 70px;
+                        left: 76px;
+                    }
+                }
+            }
+
+            .pay-content-big {
+                width: 258px;
+                height: 258px;
+                display: inline-block;
+                vertical-align: bottom;
+                margin-top: 24px;
+                margin-left: -40px;
+            }
+
+            .qrcode-desc {
+                width: 100%;
+                margin-top: 8px;
+
+                .scan {
+                    width: 30px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    padding-bottom: 14px;
+                }
+
+                .pay-text {
+                    font-size: 13px;
+                    color: #333;
+                    display: inline-block;
+                    vertical-align: middle;
+                    line-height: 18px;
+                    padding-bottom: 14px;
+                    margin-left: 8px;
+                    text-align: left;
+                }
+            }
+        }
+
+        .wechat-bottom {
+            height: 16px;
+            font-size: 14px;
+            color: #4a4a4a;
+            line-height: 16px;
+            text-align: center;
+            margin: 30px auto;
+            width: 100%;
+
+            em {
+                color: #ff6200;
+            }
+        }
+    }
+}
+
+.modal-unipay-confirm {
+    left: 0;
+    right: 0;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    width: 580px;
+    background-color: #fff;
+    transition: all .3s ease;
+    top: 30%;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    padding-bottom: 50px;
+    .title {
+        width: 560px;
+        height: 60px;
+        line-height: 60px;
+        text-align: left;
+        font-size: 16px;
+        color: #9b9b9b;
+        background-color: #efefef;
+        border-radius: 6px 6px 0 0;
+        padding-left: 20px;
+    }
+
+    .right-btn {
+        position: absolute;
+        right: 14px;
+        top: 14px;
+        cursor: pointer;
+
+        &.close {
+            width: 18px;
+            height: 18px;
+            transition: transform 2s;
+            background: url('//img.17kuxiu.com/web/live/kuxiu/img/close.png') no-repeat center;
+
+            &:hover {
+                transform: rotate(-360deg)
+            }
+        }
+    }
+
+
+    .info {
+        text-align: center;
+        font-size: 14px;
+        color: #4a4a4a;
+        margin: 30px 0 40px 0;
+    }
+
+    ul {
+        width: 100%;
+        list-style: none;
+
+        li {
+            width: 289.5px; 
+            &:first-child {
+                border-right: 1px solid #e6e6e6;
+                float: left;
+            }
+            &:last-child {
+                float: right;
+            }
+            img {
+                width: 40px;
+                height: auto;
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            .text {
+                font-size: 16px;
+                color: #4a4a4a;
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 14px;
+            }
+
+            .return {
+                margin-top: 30px;
+                text-align: center;
+
+                .return-detail {
+                    font-size: 12px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    color: #4a4a4a;
+
+                    &.right {
+                        margin-left: 20px;
+                    }
+
+                    a {
+                        color: #4a90e2;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

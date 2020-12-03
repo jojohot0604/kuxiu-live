@@ -1,0 +1,170 @@
+.service {
+    position: relative;
+    height: calc(100% - 70px);
+
+    .title {
+        font-weight: 600;
+        font-size: 14px;
+        color: #4a4a4a;
+        padding: 0 10px;
+        background: #f5f5f5;
+        height: 40px;
+        line-height: 40px;
+
+        .subtitle {
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+
+    .content {
+        padding: 2px 15px 8px 15px;
+        height: calc(100% - 10px);
+        .time {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            color: #bbb;
+            font-size: 12px;
+            margin-top: 16px;
+        }
+
+        .item {
+            display: block;
+            position: relative;
+            margin: 12px 0 0 0;
+            width: 100%;
+            &:last-child{
+                margin-bottom: 16px;
+            }
+            .det-1 {
+                display: table;
+                font-size: 12px;
+                color: #4a4a4a;
+
+                img {
+                    display: table-cell;
+                    width: 30px;
+                    height: auto;
+                    border-radius: 50%;
+                    vertical-align: middle;
+                    margin-right: 8px;
+                }
+
+                span {
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+            }
+
+            .det-2 {
+                padding: 8px 12px;
+                background: #f9f9f9;
+                color: #4a4a4a;
+                margin-left: 36px;
+                margin-top: 10px;
+                position: relative;
+                border-radius: 6px;
+                font-size: 12px;
+                border: 1px solid #dbdbdb;
+                text-overflow: ellipsis;
+                max-width: 302px;
+
+                .arrow {
+                    position: absolute;
+                    top: 10px;
+                    left: -5px;
+                    overflow: hidden;
+                    width: 8px;
+                    height: 8px;
+                    background: #f9f9f9;
+                    border-left: 1px solid #dbdbdb;
+                    border-top: 1px solid #dbdbdb;
+                    -webkit-transform: rotate(-45deg);
+                    -moz-transform: rotate(-45deg);
+                    -o-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+
+        .item-user {
+            display: block;
+            position: relative;
+            margin: 13px 0 1px 0;
+            width: 100%;
+            img {
+                display: table-cell;
+                width: 30px;
+                height: auto;
+                border-radius: 50%;
+                vertical-align: middle;
+            }
+
+            .det {
+                padding: 8px 12px;
+                background: #e7d0fc;
+                color: #9013fe;
+                margin-right: 16px;
+                position: relative;
+                border-radius: 6px;
+                font-size: 12px;
+                border: 1px solid #d7aafd;
+                text-overflow: ellipsis;
+                max-width: 302px;
+                word-break: break-all;
+                line-height: 16px;
+                .arrow {
+                    position: absolute;
+                    top: 10px;
+                    right: -5px;
+                    overflow: hidden;
+                    width: 8px;
+                    height: 8px;
+                    background: #e7d0fc;
+                    border-left: 1px solid #d7aafd;
+                    border-top: 1px solid #d7aafd;
+                    -webkit-transform: rotate(135deg);
+                    -moz-transform: rotate(135deg);
+                    -o-transform: rotate(135deg);
+                    transform: rotate(135deg);
+                }
+            }
+        }
+    }
+
+    .btn-send {
+        background: #f5f5f5;
+        height: 56px;
+        line-height: 56px;
+        position: fixed;
+        width: 100%;
+        display: table;
+        text-align: center;
+
+        input {
+            width: 314px;
+            line-height: 56px;
+            height: 38px;
+            border-radius: 19px;
+            background-color: #fff;
+            color: #4a4a4a;
+            padding: 0 14px;
+            outline: 0;
+            border: 1px solid #cfcfcf;
+            float: left;
+            margin-left: 14px;
+            margin-top: 9px;
+        }
+
+        .send {
+            width: 80px;
+            height: 56px;
+            background: #f5f5f5;
+            color: #4a4a4a;
+            line-height: 56px;
+            font-weight: 600;
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.footer {
+    color: #afafaf;
+    background-color: #575757;
+    padding: 20px 0 20px 0;
+    line-height: 22px;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    min-width: 1226px;
+    margin-top: 80px;
+    .baidu-box {
+        margin-left: 8px;
+        top: -1px;
+        position: relative;
+        display: inline-block;
+    }
+    .cnzz-box {
+        margin-left: 8px;
+        top: -1px;
+        position: relative;
+        display: inline-block;
+    }
+    &.type1 {
+        margin-top: 80px;
+    }
+    &.type2 {
+        margin-top: 112px;
+        position: relative;
+    }
+    &.type3 {
+        // margin-top: 180px;
+        // bottom: 0;
+        position: absolute;
+        margin-top: 80px;
+    }
+    .link {
+        color: #3793ff;
+        &:hover {
+            text-decoration: underline!important;
+        }
+    }
+    .icon {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: auto;
+        margin-right: 5px;
+        &.gongan {
+            width: 17px;
+            margin-top: -2px;
+        }
+    }
+}
